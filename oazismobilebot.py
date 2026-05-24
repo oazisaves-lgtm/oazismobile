@@ -14,7 +14,7 @@ from telegram.ext import (
 )
 import yt_dlp
 
-BOT_TOKEN = "8862010292:AAFmfIvMOUQ-xtLupRzpFKmH_pRw-Q5uGEw"
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8862010292:AAFmfIvMOUQ-xtLupRzpFKmH_pRw-Q5uGEw")
 
 logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
